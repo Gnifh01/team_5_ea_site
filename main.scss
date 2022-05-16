@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { font-size: 10px; }
+
+/* VARIABILI */
+@import "./scss/variabili";
+
+/* MIXINS */
+@import "./scss/mixins";
+
+/* PARTIALS */
+@import "./scss/font";
+@import "./scss/assets";
+
+@import "./scss/navbar";
+@import "./scss/hero-section";
+@import "./scss/card-section";
+@import "./scss/content-section";
+@import "./scss/footer";
