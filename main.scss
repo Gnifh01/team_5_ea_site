@@ -1,23 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Electronic Arts Text";
 }
 
-html { font-size: 10px; }
+html {
+  font-size: 10px;
+}
 
-/* VARIABILI */
-@import "./scss/variabili";
+/* VARIABLES */
+@import "./scss/variables";
 
 /* MIXINS */
 @import "./scss/mixins";
 
-/* PARTIALS */
+/* FONT AND ASSETS */
 @import "./scss/font";
 @import "./scss/assets";
 
-@import "./scss/navbar";
-@import "./scss/hero-section";
-@import "./scss/card-section";
-@import "./scss/content-section";
-@import "./scss/footer";
+/* PARTIALS */
+@import "./scss/partials/navbar";
+@import "./scss/partials/hero-section";
+@import "./scss/partials/card-section";
+@import "./scss/partials/content-section";
+@import "./scss/partials/footer";
