@@ -1,6 +1,6 @@
 /* VARIABLES */
 
-$red: #ff4747;
+$primary-color: #ff4747;
 
 $black-1: #000000;
 $black-2: #161616;
@@ -17,22 +17,28 @@ $black-op: rgba(22, 22, 22, 0.80);
 $grey-op: rgba(0, 0, 0, 0.08);
 $white-op: rgba(0, 0, 0, 0.00);
 
+/* TYPOGRAPHY */
 
-/* COLOR BLINDNESS VARIABLES */
+$h1-desktop: 4.4rem; 
+$h1-tablet: 3.2rem;
+$h1-smartphone: 3.2rem;
 
-$CB-red: #fff;
+$h2-desktop: 2.6rem;
+$h2-tablet: 2.4rem;
+$h2-smartphone: 2.4rem;
 
-$CB-black-1: #fff;
-$CB-black-2: #fff;
+$h3-desktop: 2.4rem;
+$h3-tablet: 2rem;
+$h3-smartphone: 2rem;
 
-$CB-grey-1: #fff;
-$CB-grey-2: #fff;
-$CB-grey-3: #fff;
+$h4-desktop: 1.8rem;
+$h4-tablet: 1.6rem;
+$h4-smartphone: 1.6rem;
 
-$CB-white-1: #fff;
-$CB-white-2: #fff;
-$CB-white-3: #fff;
+$span-desktop: 1.6rem;
+$span-tablet: 1.6rem;
+$span-smartphone: 1.6rem;
 
-$CB-black-op: #fff;
-$CB-grey-op: #fff;
-$CB-white-op: #fff;
+$link-desktop: 1.6rem;
+$link-tablet: 1.6rem;
+$link-smartphone: 1.6rem;

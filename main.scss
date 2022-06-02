@@ -5,9 +5,7 @@
   font-family: "Electronic Arts Text";
 }
 
-html {
-  font-size: 10px;
-}
+html { font-size: 10px; }
 
 /* VARIABLES */
 @import "./scss/variables";
@@ -17,11 +15,7 @@ html {
 
 /* FONT AND ASSETS */
 @import "./scss/font";
-@import "./scss/assets";
+@import "./scss/components";
 
 /* PARTIALS */
-@import "./scss/partials/navbar";
-@import "./scss/partials/hero-section";
-@import "./scss/partials/card-section";
-@import "./scss/partials/content-section";
-@import "./scss/partials/footer";
+@import "./scss/all-partials";

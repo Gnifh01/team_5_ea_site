@@ -1,0 +1,44 @@
+/* BUTTONS */
+
+.default {
+  width: 16rem;
+  height: 6rem;
+  padding: 1.6rem 2.4rem;
+  font-size: $h4-desktop;
+  background-color: $white-1;
+  color: $black-1;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.1s linear;
+  &:hover {
+    transition: all 0.1s linear;
+    transform: scale(1.1);
+  }
+}
+
+.alternative {
+  @extend .default;
+  border: 2px solid $black-1;
+  background-color: transparent;
+}
+
+.transparent {
+  @extend .default;
+  border: 2px solid $white-1;
+  background-color: transparent;
+  color: $white-1;
+}
+
+@mixin button($type: "default") {
+  @if ($type == "default") {
+    @extend .default;
+  } @else if ($type == "alternative") {
+    @extend .alternative;
+  } @else if ($type == "transparent") {
+    @extend .transparent;
+  } @else {
+    @extend .default;
+  }
+}
+
+
