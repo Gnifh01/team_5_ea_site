@@ -1,0 +1,10 @@
+#card-section {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+    @include flex-column-center;
+
+    .title {
+        @include h1("desktop");
+    }
+}

@@ -10,6 +10,20 @@ html {
   font-size: 10px;
 }
 
+/* VARIABLES */
+/* VARIABLES */
+/* TYPOGRAPHY */
+/* MIXINS */
+/* FLEX-DIRECTION ROW */
+/* FLEX-DIRECTION COLUMN */
+/* MEDIA QUERIES */
+/* HEADING 1 */
+/* HEADING 2 */
+/* HEADING 3 */
+/* HEADING 4 */
+/* SPAN */
+/* LINK */
+/* FONT AND ASSETS */
 @font-face {
   font-family: "Electronic Arts Text";
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
@@ -43,4 +57,20 @@ html {
   color: #ffffff;
 }
 
-/* PARTIALS *//*# sourceMappingURL=main.css.map */
+/* PARTIALS */
+#card-section {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#card-section .title {
+  font-size: 4.4rem;
+  line-height: 1.15;
+  letter-spacing: normal;
+  font-weight: bolder;
+  color: #161616;
+}/*# sourceMappingURL=main.css.map */
