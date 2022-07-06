@@ -30,7 +30,7 @@ html {
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
 }
 /* BUTTONS */
-.default, .transparent, .alternative {
+.default, .transparent, .alternative, #card-section button {
   width: 16rem;
   height: 6rem;
   padding: 1.6rem 2.4rem;
@@ -41,12 +41,12 @@ html {
   border-radius: 3px;
   transition: all 0.1s linear;
 }
-.default:hover, .transparent:hover, .alternative:hover {
+.default:hover, .transparent:hover, .alternative:hover, #card-section button:hover {
   transition: all 0.1s linear;
   transform: scale(1.1);
 }
 
-.alternative {
+.alternative, #card-section button {
   border: 2px solid #000000;
   background-color: transparent;
 }
@@ -58,222 +58,91 @@ html {
 }
 
 /* PARTIALS */
-/* DESKTOP STYLES */
-/* TABLET MEDIA QUERIES (Portrait) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
-}
-/* SMARTPHONE MEDIA QUERIES (Portrait and Lanscape) */
-@media (max-width: 767px) {
-  /* CSS */
-}
-/* DESKTOP STYLES */
-/* TABLET MEDIA QUERIES (Portrait) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
-}
-/* SMARTPHONE MEDIA QUERIES (Portrait and Lanscape) */
-@media (max-width: 767px) {
-  /* CSS */
-}
-/* DESKTOP STYLES */
-/* TABLET MEDIA QUERIES (Portrait) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
-}
-/* SMARTPHONE MEDIA QUERIES (Portrait and Lanscape) */
-@media (max-width: 767px) {
-  /* CSS */
-}
-/* DESKTOP STYLES */
 #card-section {
-  width: 100%;
-  height: 50vh;
-  background-color: #ff4747;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  #card-section {
-    background-color: blue;
-  }
-}
-@media (max-width: 767px) {
-  #card-section {
-    background-color: green;
-  }
-}
-#card-section h1 {
+#card-section .title {
   font-size: 4.4rem;
   line-height: 1.15;
   letter-spacing: normal;
   font-weight: bolder;
   color: #161616;
-  color: black;
+  margin: 2.7rem 0rem;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  #card-section h1 {
-    font-size: 3.2rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    font-weight: 600;
-    color: #161616;
-    color: red;
-  }
+#card-section .cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
 }
-@media (max-width: 767px) {
-  #card-section h1 {
-    font-size: 3.2rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    font-weight: 600;
-    color: #161616;
-    color: blue;
-  }
+#card-section .cards .first-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#card-section h2 {
-  font-size: 2.6rem;
-  line-height: 1.15;
-  letter-spacing: normal;
-  font-weight: 600;
-  color: #161616;
-  color: black;
+#card-section .cards .first-line .card {
+  width: 35rem;
+  height: 35rem;
+  margin: 0rem 1.4rem 1.4rem 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  #card-section h2 {
-    font-size: 2.4rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    font-weight: 600;
-    color: #161616;
-    color: red;
-  }
+#card-section .cards .first-line .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-@media (max-width: 767px) {
-  #card-section h2 {
-    font-size: 2.4rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    font-weight: 600;
-    color: #161616;
-    color: #ff4747;
-  }
+#card-section .cards .first-line .card .cover {
+  width: auto;
+  height: auto;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(0.3);
 }
-#card-section h3 {
-  font-size: 2.4rem;
-  line-height: 1.15;
-  letter-spacing: normal;
-  color: #161616;
-  color: black;
+#card-section .cards .first-line .card h4 {
+  display: none;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  #card-section h3 {
-    font-size: 2rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    color: #161616;
-    color: red;
-  }
+#card-section .cards .second-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 767px) {
-  #card-section h3 {
-    font-size: 2rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    color: #161616;
-  }
+#card-section .cards .second-line .card {
+  width: 35rem;
+  height: 35rem;
+  margin: 1.4rem 1.4rem 0rem 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#card-section h4 {
-  font-size: 1.8rem;
-  line-height: 1.15;
-  letter-spacing: normal;
-  font-weight: 550;
-  color: #161616;
-  color: black;
+#card-section .cards .second-line .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  #card-section h4 {
-    font-size: 1.6rem;
-    line-height: 1.65;
-    letter-spacing: normal;
-    font-weight: 550;
-    color: #161616;
-    color: red;
-  }
+#card-section .cards .second-line .card .cover {
+  width: auto;
+  height: auto;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(0.3);
 }
-@media (max-width: 767px) {
-  #card-section h4 {
-    font-size: 1.6rem;
-    line-height: 1.65;
-    letter-spacing: normal;
-    font-weight: 550;
-    color: #161616;
-    color: blue;
-  }
+#card-section .cards .second-line .card h4 {
+  display: none;
 }
-#card-section span {
-  font-size: 1.6rem;
-  line-height: 1.15;
-  letter-spacing: normal;
-  font-weight: lighter;
-  color: #161616;
-  color: black;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  #card-section span {
-    font-size: 1.6rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    font-weight: lighter;
-    color: #161616;
-    color: red;
-  }
-}
-@media (max-width: 767px) {
-  #card-section span {
-    font-size: 1.6rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    font-weight: lighter;
-    color: #161616;
-    color: blue;
-  }
-}
-#card-section a {
-  font-size: 1.6rem;
-  line-height: 1.15;
-  letter-spacing: normal;
-  font-weight: lighter;
-  color: #161616;
-  text-decoration: none;
-  color: black;
-}
-#card-section a:hover {
-  color: #ff4747;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  #card-section a {
-    font-size: 1.6rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    font-weight: lighter;
-    color: #161616;
-    text-decoration: none;
-    color: red;
-  }
-  #card-section a:hover {
-    color: #ff4747;
-  }
-}
-@media (max-width: 767px) {
-  #card-section a {
-    font-size: 1.6rem;
-    line-height: 1.15;
-    letter-spacing: normal;
-    font-weight: lighter;
-    color: #161616;
-    text-decoration: none;
-    color: blue;
-  }
-  #card-section a:hover {
-    color: #ff4747;
-  }
+#card-section button {
+  margin: 2.7rem 0rem;
 }/*# sourceMappingURL=main.css.map */
