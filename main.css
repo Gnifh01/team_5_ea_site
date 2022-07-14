@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Electronic Arts Text";
 }
 
@@ -10,13 +11,28 @@ html {
   font-size: 10px;
 }
 
+/* VARIABLES */
+/* VARIABLES */
+/* TYPOGRAPHY */
+/* MIXINS */
+/* FLEX-DIRECTION ROW */
+/* FLEX-DIRECTION COLUMN */
+/* MEDIA QUERIES */
+/* HEADING 1 */
+/* HEADING 2 */
+/* HEADING 3 */
+/* HEADING 4 */
+/* SPAN */
+/* LINK */
+/* FONT AND ASSETS */
 @font-face {
   font-family: "Electronic Arts Text";
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
 }
+
 /* BUTTONS */
-.default, .transparent, .alternative {
+.default, .alternative, .transparent {
   width: 16rem;
   height: 6rem;
   padding: 1.6rem 2.4rem;
@@ -25,11 +41,15 @@ html {
   color: #000000;
   border: none;
   border-radius: 3px;
+  -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-.default:hover, .transparent:hover, .alternative:hover {
+
+.default:hover, .alternative:hover, .transparent:hover {
+  -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .alternative {
@@ -43,4 +63,78 @@ html {
   color: #ffffff;
 }
 
-/* PARTIALS *//*# sourceMappingURL=main.css.map */
+/* PARTIALS */
+#content-section {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content-section .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18vw;
+  height: 35vh;
+}
+
+#content-section .card-content img {
+  width: 100%;
+  height: 100%;
+}
+
+#content-section .card-content .info-card-content-container {
+  margin: 1.5rem;
+}
+
+#content-section .card-content .info-card-content-container .mark-date-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+}
+
+#content-section .card-content .info-card-content-container .mark-date-content .mark {
+  color: #ff4747;
+}
+
+#content-section .card-content .info-card-content-container .mark-date-content div, #content-section .card-content .info-card-content-container .mark-date-content h2 {
+  margin: 0rem 0.5rem;
+}
+
+#content-section .card-content .info-card-content-container .title-card-content {
+  font-size: 2.4rem;
+}
+
+#content-section .card-content .info-card-content-container .text-card-content {
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=main.css.map */
