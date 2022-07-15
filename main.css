@@ -32,7 +32,7 @@ html {
 }
 
 /* BUTTONS */
-.default, .alternative, #content-section .btn-content, .transparent {
+.default, .alternative, #content-section .btn-content-container .btn-content, .transparent {
   width: 16rem;
   height: 6rem;
   padding: 1.6rem 2.4rem;
@@ -45,14 +45,14 @@ html {
   transition: all 0.1s linear;
 }
 
-.default:hover, .alternative:hover, #content-section .btn-content:hover, .transparent:hover {
+.default:hover, .alternative:hover, #content-section .btn-content-container .btn-content:hover, .transparent:hover {
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.alternative, #content-section .btn-content {
+.alternative, #content-section .btn-content-container .btn-content {
   border: 2px solid #000000;
   background-color: transparent;
 }
@@ -117,11 +117,21 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 18.3vw;
-  height: 47.5vh;
+  height: 53.8vh;
   margin: 0rem 0.5rem 1.6rem;
-  box-shadow: 1px 23px 13px -4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 1px 23px 13px -4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 1px 23px 13px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 23px 13px -4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 23px 13px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 23px 13px -4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#content-section .card-content-container .card-content:hover {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+  box-shadow: 0px 23px 13px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 23px 13px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 23px 13px 4px rgba(0, 0, 0, 0.4);
 }
 
 #content-section .card-content-container .card-content img {
@@ -130,6 +140,8 @@ html {
 
 #content-section .card-content-container .card-content .info-card-content-container {
   margin: 1.5rem;
+  letter-spacing: 0.02rem;
+  line-height: 3rem;
 }
 
 #content-section .card-content-container .card-content .info-card-content-container .mark-date-content {
@@ -160,5 +172,9 @@ html {
 
 #content-section .card-content-container .card-content .info-card-content-container .text-card-content {
   font-size: 1.8rem;
+}
+
+#content-section .btn-content-container {
+  margin: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
