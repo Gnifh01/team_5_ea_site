@@ -81,8 +81,55 @@ html {
   background-color: #f3f3f3;
 }
 
+#content-section br {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid #eaeaea;
+  margin-bottom: 3rem;
+}
+
+#content-section .tab-bar-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+#content-section .tab-bar-content button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+#content-section .tab-bar-content button:hover {
+  background-color: #ddd;
+}
+
+#content-section .tab-bar-content button.active {
+  background-color: #ccc;
+}
+
+#content-section .tabcontent {
+  display: none;
+  margin: 3rem;
+}
+
 #content-section .title-content {
   font-size: 4.4rem;
+  margin: 3rem;
 }
 
 #content-section .card-content-container {
@@ -95,7 +142,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 75vw;
+  width: 60vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
