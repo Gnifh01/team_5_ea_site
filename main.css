@@ -3,10 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Electronic Arts Text"; }
+  font-family: "Electronic Arts Text";
+}
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+}
 
 /* VARIABLES */
 /* VARIABLES */
@@ -25,9 +27,10 @@ html {
 @font-face {
   font-family: "Electronic Arts Text";
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg"); }
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
+}
 /* BUTTONS */
-.default, .alternative, .transparent {
+.default, .transparent, .alternative {
   width: 16rem;
   height: 6rem;
   padding: 1.6rem 2.4rem;
@@ -36,19 +39,23 @@ html {
   color: #000000;
   border: none;
   border-radius: 3px;
-  transition: all 0.1s linear; }
-  .default:hover, .alternative:hover, .transparent:hover {
-    transition: all 0.1s linear;
-    transform: scale(1.1); }
+  transition: all 0.1s linear;
+}
+.default:hover, .transparent:hover, .alternative:hover {
+  transition: all 0.1s linear;
+  transform: scale(1.1);
+}
 
 .alternative {
   border: 2px solid #000000;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 .transparent {
   border: 2px solid #ffffff;
   background-color: transparent;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 /* PARTIALS */
 #hero-section {
@@ -56,7 +63,8 @@ html {
   justify-content: center;
   align-items: center;
   padding-top: 60px;
-  text-align: center; }
+  text-align: center;
+}
 
 .hero-img {
   position: relative;
@@ -66,11 +74,13 @@ html {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .hero-img-one {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+}
 
 .apex-hero {
   position: absolute;
@@ -82,7 +92,8 @@ html {
   align-items: center;
   margin-top: 20px;
   margin-right: 500px;
-  align-content: space-between; }
+  align-content: space-between;
+}
 
 .default, .alternative, .transparent {
   width: 16rem;
@@ -94,13 +105,16 @@ html {
   border: none;
   border-radius: 3px;
   transition: all 0.1s linear;
-  margin-bottom: 30px; }
-  .default:hover, .alternative:hover, .transparent:hover {
-    transition: all 0.1s linear;
-    transform: scale(1.1); }
+  display: flex;
+  margin-top: 20px;
+}
+.default:hover, .alternative:hover, .transparent:hover {
+  transition: all 0.1s linear;
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 p {
   font-size: 2.4rem;
-  color: #ffffff; }
-
-/*# sourceMappingURL=main.css.map */
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */

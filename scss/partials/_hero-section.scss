@@ -46,6 +46,7 @@
   
   }
   .default {
+   
     width: 16rem;
     height: 6rem;
     padding: 1.6rem 2.4rem;
@@ -55,12 +56,18 @@
     border: none;
     border-radius: 3px;
     transition: all 0.1s linear;
+    display: flex;
+    margin-top: 20px;
+    
+    
     &:hover {
       transition: all 0.1s linear;
       transform: scale(1.1);
+      cursor: pointer;
     }
-    margin-bottom: 30px;
-  }
+
+
+  } 
 
 p {
     font-size: $h3-desktop;
