@@ -1,9 +1,8 @@
-@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Electronic Arts Text";
+  font-family: "ElectronicArtsDisplay-Regular";
 }
 
 html {
@@ -25,9 +24,16 @@ html {
 /* LINK */
 /* FONT AND ASSETS */
 @font-face {
-  font-family: "Electronic Arts Text";
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
+  font-family: "ElectronicArtsDisplay-Regular";
+  src: url("../assets/font/ElectronicArtsDisplay-Regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ElectronicArtsDisplay-Bold";
+  src: url("../assets/font/ElectronicArtsDisplay-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
 }
 /* BUTTONS */
 .default, .transparent, .alternative, #card-section button {
@@ -61,6 +67,7 @@ html {
 #card-section {
   width: auto;
   height: auto;
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +79,8 @@ html {
   letter-spacing: normal;
   font-weight: bolder;
   color: #161616;
-  margin: 2.7rem 0rem;
+  margin: 3rem 0rem;
+  font-family: "ElectronicArtsDisplay-Bold";
 }
 #card-section .cards {
   width: 100%;
@@ -376,5 +384,6 @@ html {
   #card-section button {
     width: 33.4rem;
     margin: 1.2rem;
+    font-family: "ElectronicArtsDisplay-Regular";
   }
 }/*# sourceMappingURL=main.css.map */

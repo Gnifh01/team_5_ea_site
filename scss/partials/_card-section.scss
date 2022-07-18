@@ -1,11 +1,13 @@
 #card-section {
   width: auto;
   height: auto; //100vh
+  background-color: $white-3;
   @include flex-column-center;
 
   .title {
     @include h1("desktop");
-    margin: 2.7rem 0rem;
+    margin: 3rem 0rem;
+    font-family: 'ElectronicArtsDisplay-Bold';
   }
 
   .cards {
@@ -315,6 +317,7 @@
       @include button("alternative");
       width: 33.4rem;
       margin: 1.2rem;
+      font-family: 'ElectronicArtsDisplay-Regular';
     }
   }
 }
