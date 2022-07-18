@@ -1,4 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 * {
   margin: 0;
   padding: 0;
@@ -25,12 +24,13 @@ html {
 /* LINK */
 /* FONT AND ASSETS */
 @font-face {
-  font-family: "Electronic Arts Text";
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
+  font-family: "ElectronicArtsDisplay-Bold";
+  src: url("../assets/font/ElectronicArtsDisplay-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
 }
 /* BUTTONS */
-.default, .transparent, .alternative, #card-section button {
+.default, .transparent, .alternative {
   width: 16rem;
   height: 6rem;
   padding: 1.6rem 2.4rem;
@@ -41,12 +41,12 @@ html {
   border-radius: 3px;
   transition: all 0.1s linear;
 }
-.default:hover, .transparent:hover, .alternative:hover, #card-section button:hover {
+.default:hover, .transparent:hover, .alternative:hover {
   transition: all 0.1s linear;
   transform: scale(1.1);
 }
 
-.alternative, #card-section button {
+.alternative {
   border: 2px solid #000000;
   background-color: transparent;
 }
@@ -57,92 +57,4 @@ html {
   color: #ffffff;
 }
 
-/* PARTIALS */
-#card-section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#card-section .title {
-  font-size: 4.4rem;
-  line-height: 1.15;
-  letter-spacing: normal;
-  font-weight: bolder;
-  color: #161616;
-  margin: 2.7rem 0rem;
-}
-#card-section .cards {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #000000;
-}
-#card-section .cards .first-line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#card-section .cards .first-line .card {
-  width: 35rem;
-  height: 35rem;
-  margin: 0rem 1.4rem 1.4rem 1.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#card-section .cards .first-line .card img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#card-section .cards .first-line .card .cover {
-  width: auto;
-  height: auto;
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transform: scale(0.3);
-}
-#card-section .cards .first-line .card h4 {
-  display: none;
-}
-#card-section .cards .second-line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#card-section .cards .second-line .card {
-  width: 35rem;
-  height: 35rem;
-  margin: 1.4rem 1.4rem 0rem 1.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#card-section .cards .second-line .card img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#card-section .cards .second-line .card .cover {
-  width: auto;
-  height: auto;
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transform: scale(0.3);
-}
-#card-section .cards .second-line .card h4 {
-  display: none;
-}
-#card-section button {
-  margin: 2.7rem 0rem;
-}/*# sourceMappingURL=main.css.map */
+/* PARTIALS *//*# sourceMappingURL=main.css.map */
