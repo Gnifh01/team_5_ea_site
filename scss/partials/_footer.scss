@@ -11,11 +11,12 @@ footer {
             width: 100%;
             height: 45rem;
             position: relative;
+            background-image: url("../../assets/footer-img/cover.jpg");
             @include flex-center-center;
         }
 
         #iscrizione-footer {
-            width: 60rem;
+            width: 48rem;
             height: 30rem;
             position: absolute;
             @include flex-column-start;
@@ -26,6 +27,7 @@ footer {
             .description {
                 @include h4("desktop");
                 color: $white-1;
+                line-height: 1.4;
             }
         }
     }
@@ -44,8 +46,10 @@ footer {
 
         .parent-description {
             @include h2("desktop");
-            color: $black-1;
+            color: $black-2;
             margin-left: 21%;
+            font-family: 'ElectronicArtsDisplay-Bold';
+            width: 50rem;
         }
 
         .parent-button {
@@ -66,6 +70,7 @@ footer {
             a {
                 @include link("desktop");
                 margin-right: 4rem;
+                line-height: 3;
             }
         }
 
@@ -160,142 +165,650 @@ footer {
         #sub-footer-select {
             width: 28%;
             height: 90%;
-            border: 1px solid red;
             margin: 3rem 0rem 3rem 2rem;
-            @include flex-column-center;
-            justify-content: space-between;
+            @include flex-evenly-center;
+            align-items: start;
+            padding-top: 1rem;
 
-            
-        }
-    }
-}
+            .first-select {
+                @include flex-column-center;
+                justify-content: flex-start;
+                align-items: start;
+                border: 2px solid #aaa;
+                border-radius: 2px;
+                width: 20rem;
+                height: 6rem;
 
-@media all and (min-width: 481px) and (max-width: 736px) {
+                .sup-text {
+                    @include span("desktop");
+                    margin: 1rem 2rem 0.5rem 2rem;
+                    opacity: 0.7;
+                }
 
-    #parent-control-footer {
-        width: 100%;
-        height: 20rem;
-        @include flex-column-center;
+                .option-select {
+                    @include flex-between-center;
+                    width: 100%;
 
-        .parent-description {
-            @include h2("tablet");
-            color: $black-1;
-            margin-left: 21%;
-        }
-    }
+                    .sub-text {
+                        @include span("desktop");
+                        margin: 0rem 2rem;
+                    }
 
-    #sub-footer-1 {
-        height: 35rem;
-        @include flex-column-center;
-
-        a {
-            @include link("tablet");
-            margin-right: 4rem;
-        }
-    }
-
-    #sub-footer-social {
-        text-align: start;
-
-        h3 {
-            @include span("tablet");
-            color: $black-1;
-            font-weight: bold;
-        }
-
-        i {
-            transform: scale(2.2);
-            margin: 2rem 0rem 0rem 4.5rem;
-            color: #282828;
-            transition: 0.3s;
-
-            &:hover {
-                transform: scale(3);
-                transition: 0.3s;
-            }
-        }
-    }
-
-    #sub-footer-2 {
-        width: 100%;
-        height: 700rem;
-        @include flex-column-start;
-    }
-
-    a {
-        @include link("tablet");
-    }
-}
-
-@media screen and (max-width: 480px) {
-    footer {
-        width: 100vw;
-        height: 100vh;
-        @include flex-column-center;
-
-        .iscriviti {
-            width: 100%;
-        }
-
-        #parent-control-footer {
-            width: 100%;
-            height: 212.5rem;
-            @include flex-column-center;
-
-            .parent-description {
-                @include h2("smartphone");
-                color: $black-1;
-                margin-left: 21%;
-            }
-
-            .parent-button {
-                @include button("alternative");
-                margin-right: 21%;
-                width: 100%;
-            }
-        }
-
-        #sub-footer-1 {
-            height: 425rem;
-            @include flex-column-center;
-
-            a {
-                @include link("smartphone");
-                margin-right: 4rem;
-            }
-        }
-
-        #sub-footer-social {
-            text-align: start;
-
-            h3 {
-                @include span("smartphone");
-                color: $black-1;
-                font-weight: bold;
-            }
-
-            i {
-                transform: scale(2.2);
-                margin: 2rem 0rem 0rem 4.5rem;
-                color: #282828;
-                transition: 0.3s;
+                    .fa-angle-down {
+                        font-size: 1.6rem;
+                        margin-right: 2rem;
+                    }
+                }
 
                 &:hover {
-                    transform: scale(3);
-                    transition: 0.3s;
+                    box-shadow:
+                        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                        100px 100px 80px rgba(0, 0, 0, 0.07);
+
+                    .fa-angle-down {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .second-select {
+                @include flex-column-center;
+                justify-content: flex-start;
+                align-items: start;
+                border: 2px solid #aaa;
+                border-radius: 2px;
+                width: 20rem;
+                height: 6rem;
+
+                .sup-text {
+                    @include span("desktop");
+                    margin: 1rem 2rem 0.5rem 2rem;
+                    opacity: 0.7;
+                }
+
+                .option-select {
+                    @include flex-between-center;
+                    width: 100%;
+
+                    .sub-text {
+                        @include span("desktop");
+                        margin: 0rem 2rem;
+                    }
+
+                    .fa-angle-down {
+                        font-size: 1.6rem;
+                        margin-right: 2rem;
+                    }
+                }
+
+                &:hover {
+                    box-shadow:
+                        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                        100px 100px 80px rgba(0, 0, 0, 0.07);
+
+                    .fa-angle-down {
+                        transform: rotate(180deg);
+                    }
                 }
             }
         }
     }
+}
 
-    #sub-footer-2 {
-        width: 100%;
-        height: 700rem;
-        background-color: $white-3;
-        @include flex-column-start;
+@include tablet-media-query {
+    footer {
+        #banner-footer {
+            height: 40rem;
+
+            .banner {
+                height: 40rem;
+                background-image: url("../../assets/footer-img/banner-tablet.jpg");
+            }
+
+            #iscrizione-footer {
+                width: 36rem;
+                height: 30rem;
+                position: absolute;
+                @include flex-column-start;
+                align-items: flex-start;
+                top: 5%;
+                left: 6%;
+
+                .description {
+                    @include h4("tablet");
+                    color: $white-1;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        #parent-control-footer {
+            width: 100%;
+            height: 18rem;
+            background-color: #6fb0d6;
+            @include flex-column-center;
+            text-align: center;
+
+            .parent-description {
+                @include h2("tablet");
+                color: $black-2;
+                font-family: 'ElectronicArtsDisplay-Bold';
+                margin: 0;
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+
+            .parent-button {
+                margin: 0;
+                margin-top: 1rem;
+            }
+        }
+
+        #sub-footer-1 {
+            width: 100%;
+            height: 28rem;
+            background-color: $grey-3;
+            @include flex-column-center;
+            align-items: start;
+            justify-content: start;
+            padding-top: 3rem;
+
+            #sub-footer-link {
+                margin-left: 5rem;
+                width: 74rem;
+
+                a {
+                    @include link("desktop");
+                    margin-right: 4rem;
+                    line-height: 2;
+                }
+            }
+
+            #sub-footer-social {
+                margin: 0;
+                margin-left: 5rem;
+                margin-top: 3rem;
+                text-align: start;
+
+                h3 {
+                    @include span("desktop");
+                    color: $black-1;
+                    font-weight: bold;
+                }
+
+                i {
+                    transform: scale(2.2);
+                    margin: 2rem 4.5rem 0rem 0rem;
+                    color: #282828;
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(3);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+
+        #sub-footer-2 {
+            width: 100%;
+            height: 40rem;
+            background-color: $white-3;
+            @include flex-column-center;
+            position: relative;
+
+            #sub-footer-logo {
+                margin-left: 0;
+
+
+                .sub-footer-circle {
+                    border-radius: 50%;
+                    width: 5.5rem;
+                    height: 5.5rem;
+                    text-align: start;
+                    position: absolute;
+                    top: 2.5rem;
+                    left: 5rem;
+                }
+            }
+
+            #sub-footer-part2 {
+                width: 100%;
+                height: 100%;
+                margin-left: 10rem;
+                margin-top: 10rem;
+                @include flex-center-center;
+                justify-content: space-between;
+
+                #sub-footer-accessibilità {
+                    height: 33.3%;
+                    margin-top: 0;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+
+                    .sup-span {
+                        text-decoration: none;
+                        @include span("tablet");
+                        font-size: 1.8rem;
+                        margin: 0rem 5rem 3rem 0rem;
+                    }
+                }
+
+                #sub-footer-privacy {
+                    width: 90%;
+                    height: 33.3%;
+                    margin-top: 1.5rem;
+                    margin-left: -7rem;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+
+                    .sub-span {
+                        text-decoration: none;
+                        @include span("tablet");
+                        margin-right: 5rem;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        line-height: 1.6;
+                    }
+
+                    .yt {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+
+            #sub-footer-select {
+                width: 90%;
+                height: auto;
+                margin: 3rem 0rem 3rem 2rem;
+                @include flex-between-center;
+                align-items: start;
+                padding-top: 1rem;
+                position: absolute;
+                top: 16rem;
+
+                .first-select {
+                    @include flex-column-center;
+                    justify-content: flex-start;
+                    align-items: start;
+                    border: 2px solid #aaa;
+                    border-radius: 2px;
+                    width: 35rem;
+                    height: 6rem;
+
+                    .sup-text {
+                        @include span("tablet");
+                        margin: 1rem 2rem 0.5rem 2rem;
+                        opacity: 0.7;
+                    }
+
+                    .option-select {
+                        @include flex-between-center;
+                        width: 100%;
+
+                        .sub-text {
+                            @include span("tablet");
+                            margin: 0rem 2rem;
+                        }
+
+                        .fa-angle-down {
+                            font-size: 1.6rem;
+                            margin-right: 2rem;
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow:
+                            2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                            6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                            12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                            22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                            41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                            100px 100px 80px rgba(0, 0, 0, 0.07);
+
+                        .fa-angle-down {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .second-select {
+                    @include flex-column-center;
+                    justify-content: flex-start;
+                    align-items: start;
+                    border: 2px solid #aaa;
+                    border-radius: 2px;
+                    width: 35rem;
+                    height: 6rem;
+
+                    .sup-text {
+                        @include span("tablet");
+                        margin: 1rem 2rem 0.5rem 2rem;
+                        opacity: 0.7;
+                    }
+
+                    .option-select {
+                        @include flex-between-center;
+                        width: 100%;
+
+                        .sub-text {
+                            @include span("tablet");
+                            margin: 0rem 2rem;
+                        }
+
+                        .fa-angle-down {
+                            font-size: 1.6rem;
+                            margin-right: 2rem;
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow:
+                            2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                            6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                            12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                            22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                            41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                            100px 100px 80px rgba(0, 0, 0, 0.07);
+
+                        .fa-angle-down {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
     }
+}
 
-    a {
-        @include link("smartphone");
+@include smartphone-media-query {
+    footer {
+        #banner-footer {
+            height: 90vh;
+
+            .banner {
+                height: 90vh;
+                background-image: url("../../assets/footer-img/banner-phone.jpg");
+            }
+
+            #iscrizione-footer {
+                width: 33rem;
+                height: 30rem;
+                position: absolute;
+                @include flex-column-start;
+                align-items: flex-start;
+                top: 25%;
+                left: 8%;
+
+                .description {
+                    @include h4("smartphone");
+                    color: $white-1;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .iscriviti {
+            margin-top: 2.2rem;
+            width: 33rem;
+        }
+
+        #parent-control-footer {
+            width: 100%;
+            height: 20rem;
+            background-color: #6fb0d6;
+            @include flex-column-center;
+            text-align: center;
+
+            .parent-description {
+                @include h2("smartphone");
+                color: $black-2;
+                font-family: 'ElectronicArtsDisplay-Bold';
+                margin: 0;
+                margin-bottom: 1rem;
+                width: 30rem;
+            }
+
+            .parent-button {
+                @include button("alternative");
+                margin: 0;
+                margin-top: 1rem;
+                width: 30rem;
+            }
+        }
+
+        #sub-footer-1 {
+            width: 100%;
+            height: 35rem;
+            background-color: $grey-3;
+            @include flex-column-center;
+            align-items: start;
+            justify-content: start;
+            padding-top: 3rem;
+
+
+            #sub-footer-link {
+                margin-left: 2rem;
+                width: 35rem;
+
+                a {
+                    @include link("smartphone");
+                    margin-right: 2rem;
+                    line-height: 2;
+                }
+            }
+
+            #sub-footer-social {
+                margin: 0;
+                margin-left: 2.3rem;
+                margin-top: 3rem;
+                text-align: start;
+
+                h3 {
+                    @include span("smartphone");
+                    color: $black-1;
+                    font-weight: bold;
+                }
+
+                i {
+                    transform: scale(2.2);
+                    margin: 2rem 4.5rem 0rem 0rem;
+                    color: #282828;
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(3);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+
+        #sub-footer-2 {
+            width: 100%;
+            height: 60rem;
+            background-color: $white-1;
+            @include flex-column-center;
+            position: relative;
+
+            #sub-footer-logo {
+                margin-left: 0;
+
+                .sub-footer-circle {
+                    border-radius: 50%;
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    text-align: start;
+                    position: absolute;
+                    top: 3.5rem;
+                    left: 2rem;
+                }
+            }
+
+            #sub-footer-part2 {
+                width: 100%;
+                height: 100%;
+                margin-left: 4rem;
+                margin-top: 10rem;
+                @include flex-between-center;
+
+                #sub-footer-accessibilità {
+                    height: 18%;
+                    margin-top: 0;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .sup-span {
+                        text-decoration: none;
+                        @include span("smartphone");
+                        margin: 0rem 5rem 0rem 0rem;
+                        line-height: 1;
+                        margin-bottom: 0;
+                    }
+                }
+
+                #sub-footer-privacy {
+                    width: 100%;
+                    height: 33.3%;
+                    margin: 0;
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .sub-span {
+                        text-decoration: none;
+                        @include span("smartphone");
+                        margin-right: 5rem;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        line-height: 2;
+                    }
+
+                    .yt {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+
+            #sub-footer-select {
+                width: 90%;
+                height: auto;
+                margin: 3rem 0rem 3rem 2rem;
+                @include flex-column-center;
+                align-items: start;
+                padding-top: 1rem;
+                position: absolute;
+                top: 18rem;
+
+                .first-select {
+                    @include flex-column-center;
+                    justify-content: flex-start;
+                    align-items: start;
+                    border: 2px solid #aaa;
+                    border-radius: 2px;
+                    width: 35rem;
+                    height: 6rem;
+                    margin-bottom: 1rem;
+                    margin-left: -1rem;
+
+                    .sup-text {
+                        @include span("smartphone");
+                        margin: 1rem 2rem 0.5rem 2rem;
+                        opacity: 0.7;
+                    }
+
+                    .option-select {
+                        @include flex-between-center;
+                        width: 100%;
+
+                        .sub-text {
+                            @include span("smartphone");
+                            margin: 0rem 2rem;
+                        }
+
+                        .fa-angle-down {
+                            font-size: 1.6rem;
+                            margin-right: 2rem;
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow:
+                            2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                            6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                            12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                            22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                            41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                            100px 100px 80px rgba(0, 0, 0, 0.07);
+
+                        .fa-angle-down {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .second-select {
+                    @include flex-column-center;
+                    justify-content: flex-start;
+                    align-items: start;
+                    border: 2px solid #aaa;
+                    border-radius: 2px;
+                    width: 35rem;
+                    height: 6rem;
+                    margin-top: 1rem;
+                    margin-left: -1rem;
+
+                    .sup-text {
+                        @include span("smartphone");
+                        margin: 1rem 2rem 0.5rem 2rem;
+                        opacity: 0.7;
+                    }
+
+                    .option-select {
+                        @include flex-between-center;
+                        width: 100%;
+
+                        .sub-text {
+                            @include span("smartphone");
+                            margin: 0rem 2rem;
+                        }
+
+                        .fa-angle-down {
+                            font-size: 1.6rem;
+                            margin-right: 2rem;
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow:
+                            2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                            6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                            12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                            22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                            41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                            100px 100px 80px rgba(0, 0, 0, 0.07);
+
+                        .fa-angle-down {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
