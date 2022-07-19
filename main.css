@@ -71,6 +71,7 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-image: url("../../assets/hero-img/Hero-img1920w.jpg");
   transform: scale(1.1);
 }
 
@@ -128,5 +129,33 @@ p {
   }
   .default, .alternative, .transparent {
     width: 84%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-img {
+    height: 40vh;
+    width: 100vw;
+    border: 1px solid red;
+  }
+  .hero-img-one {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .filter {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-image: url("../../assets/hero-img/Hero-copia-cinese-1.jpg");
+    border: 1px solid red;
+  }
+  .apex-hero {
+    position: absolute;
+    top: 23%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
