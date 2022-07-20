@@ -1,5 +1,5 @@
-
 /* INIZIO GABBO */
+
 #card-section {
   width: auto;
   height: auto; //100vh
@@ -271,6 +271,7 @@
     .title {
       @include h1("smartphone");
       font-weight: bold;
+      margin-top: 4rem;
     }
 
     .cards {
@@ -323,5 +324,6 @@
     }
   }
 }
+
 /* FINE GABBO */
 
