@@ -56,4 +56,108 @@ html {
   background-color: transparent;
   color: #ffffff;
 }
-/* PARTIALS *//*# sourceMappingURL=main.css.map */
+
+/* PARTIALS */
+
+/* Inizio parte Tiziano */
+.hero-img {
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  height: 65vh;
+  overflow: hidden;
+}
+.hero-img .hero-img-one {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/hero-img/Hero-img1920w.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.apex-hero {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: -17%;
+  top: 22%;
+  align-content: space-between;
+}
+
+.default, .alternative, .transparent {
+  background-color: #ff4747;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  letter-spacing: normal;
+  color: #161616;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+  .hero-img-one {
+    transform: scale(2);
+    filter: blur(18px);
+  }
+  .apex-hero {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    font-size: 2rem;
+    line-height: 1.15;
+    letter-spacing: normal;
+    color: #161616;
+    color: #ffffff;
+  }
+  .default, .alternative, .transparent {
+    width: 84%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-img {
+    height: 40vh;
+    width: 100vw;
+  }
+  .hero-img-one {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/hero-img/tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -15rem;
+    transform: scale(1.03);
+  }
+  .apex-hero {
+    width: 35rem;
+    height: 45rem;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+
+}/*# sourceMappingURL=main.css.map */
+
+/* Fine parte Tziano *//*# sourceMappingURL=main.css.map */
