@@ -5,7 +5,10 @@
   font-family: "ElectronicArtsDisplay-Regular";
 }
 
-html { font-size: 10px; overflow-x: hidden}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
 
 /* VARIABLES */
 @import "./scss/variables";
@@ -19,4 +22,3 @@ html { font-size: 10px; overflow-x: hidden}
 
 /* PARTIALS */
 @import "./scss/all-partials";
-

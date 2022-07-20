@@ -28,7 +28,7 @@
   align-content: space-between;
 }
 
-.default {
+.red-button {
   @include button("default");
   background-color: $primary-color;
   cursor: pointer;
