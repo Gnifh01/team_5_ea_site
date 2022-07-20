@@ -59,6 +59,7 @@ html {
 
 /* PARTIALS */
 
+/* Inizio parte Tiziano */
 .hero-img {
   position: relative;
   text-align: center;
@@ -155,7 +156,8 @@ p {
     left: 30%;
     transform: translate(-50%, -50%) scale(0.9);
   }
-====
 
 
 }/*# sourceMappingURL=main.css.map */
+
+/* Fine parte Tziano *//*# sourceMappingURL=main.css.map */
