@@ -7,6 +7,7 @@
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 /* VARIABLES */
@@ -64,6 +65,7 @@ html {
 }
 
 /* PARTIALS */
+/* INIZIO GABBO */
 #card-section {
   width: auto;
   height: auto;
@@ -386,4 +388,5 @@ html {
     margin: 1.2rem;
     font-family: "ElectronicArtsDisplay-Regular";
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/* FINE GABBO *//*# sourceMappingURL=main.css.map */
